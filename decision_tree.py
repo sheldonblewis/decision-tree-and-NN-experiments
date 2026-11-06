@@ -24,7 +24,7 @@ import copy
 def entropy(data_frame):
 
 	counts = data_frame['class'].value_counts()
-	answer = scipy.stats.entropy(counts, base=2) if len(counts) > 0 else 0
+	answer = scipy.stats.entropy(counts, base=2)
 	return answer
 
 ################# info_gain
